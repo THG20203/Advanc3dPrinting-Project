@@ -1,8 +1,27 @@
 import React from "react";
-import "./App.css";
+import "./assets/styles/typography.scss";
+/* Router and react-router-dom */
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+import ErrorPage from "./pages/Error";
+import RootLayout from "./pages/Root";
+import HomePage from "./pages/Home";
+import LatestPage from "./pages/Latest";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "latest", element: <LatestPage /> },
+    ],
+  },
+]);
 
 function App() {
-  return <div></div>;
+  return <RouterProvider router={router} />;
 }
 
 export default App;
