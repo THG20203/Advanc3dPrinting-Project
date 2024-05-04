@@ -1,10 +1,10 @@
 import React from "react";
-import "../../assets/styles/home.scss";
+import Header from "../../components/Header/Header";
 
 const HomePage = () => {
   return (
     <div className="container">
-      <p>home test</p>
+      <Header />
     </div>
   );
 };

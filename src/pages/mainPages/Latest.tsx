@@ -1,5 +1,4 @@
 import React from "react";
-import "../../assets/styles/latest.scss";
 
 const LatestPage = () => {
   return (

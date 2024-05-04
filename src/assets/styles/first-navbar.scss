@@ -10,7 +10,7 @@
       [center-end] minmax(6rem, 1fr) [content-end] 10vw [full-end];
   }
   &__content {
-    grid-column: col-start 6 / col-end 8;
+    grid-column: col-start 6 / content-end;
     background-color: var(--grey);
     margin: 0 1rem 1rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%, 0 80%);
