@@ -8,7 +8,7 @@
         [col-start] minmax(min-content, 14rem) [col-end]
       )
       [center-end] minmax(6rem, 1fr) [content-end] 10vw [full-end];
-    background-color: #fff;
+    background: var(--salmon-pink);
   }
   &__content {
     grid-column: col-start 5 / content-end;

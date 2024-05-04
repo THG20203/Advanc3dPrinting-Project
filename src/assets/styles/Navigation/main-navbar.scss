@@ -8,9 +8,29 @@
         [col-start] minmax(min-content, 14rem) [col-end]
       )
       [center-end] minmax(6rem, 1fr) [content-end] 10vw [full-end];
-    background-color: var(--salmon-pink);
+    background-color: var(--light-grey);
   }
   &__content {
     grid-column: content-start / content-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 10vw;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    &--item {
+      list-style-type: none;
+    }
+  }
+  &__link {
+    padding: 0 0 0 4rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
   }
 }
