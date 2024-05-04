@@ -6,6 +6,7 @@ on a link to go to the home page, <Outlet /> will show the home page. */
 
 import { Outlet, useNavigation } from "react-router-dom";
 import FirstNavbar from "../components/Navigation/FirstNavbar/FirstNavbar";
+import MainNavbar from "../components/Navigation/MainNavbar/MainNavbar";
 import "../assets/styles/root.scss";
 
 const RootLayout = () => {
@@ -13,6 +14,7 @@ const RootLayout = () => {
     <>
       <div>
         <FirstNavbar />
+        <MainNavbar />
       </div>
       <main>
         <Outlet />
