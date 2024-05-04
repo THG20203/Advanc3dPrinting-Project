@@ -12,7 +12,7 @@ import "../assets/styles/root.scss";
 const RootLayout = () => {
   return (
     <>
-      <div>
+      <div className="nav__root">
         <FirstNavbar />
         <MainNavbar />
       </div>
