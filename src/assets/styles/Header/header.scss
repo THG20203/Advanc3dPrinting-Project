@@ -4,10 +4,10 @@
     grid-column: content-start / content-end;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 21rem);
+    grid-template-rows: repeat(3, 24vh);
     /* gap between images */
-    gap: 3rem;
-    padding: 3rem;
+    gap: 3vh;
+    padding: 3vh;
   }
   &__image {
     width: 100%;
@@ -81,5 +81,5 @@
 
 .header__text-container:hover .header__ap-logo {
   opacity: 1; /* Full visibility on hover */
-  width: 7rem;
+  width: 6rem;
 }
