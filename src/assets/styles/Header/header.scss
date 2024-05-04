@@ -19,10 +19,6 @@
     &--container {
       position: relative;
       display: flex;
-      /* Center horizontally */
-      justify-content: center;
-      /* Center vertically */
-      align-items: center;
       /* Ensures no overflow from clip-path or image scaling */
       overflow: hidden;
       transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
@@ -62,6 +58,9 @@
       grid-column: 2 / 3;
       grid-row: 2 / 3;
     }
+  }
+  &__ap-logo {
+    width: 8rem;
   }
   &__text-container {
     position: absolute;
