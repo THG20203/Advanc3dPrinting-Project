@@ -8,7 +8,14 @@
         [col-start] minmax(min-content, 14rem) [col-end]
       )
       [center-end] minmax(6rem, 1fr) [content-end] 10vw [full-end];
-    background: var(--salmon-pink);
+    background-size: 3px 3px;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      #fff 0,
+      var(--medium-grey) 1px,
+      var(--light-grey) 0,
+      #fff 50%
+    );
   }
   &__content {
     grid-column: col-start 5 / content-end;
@@ -20,7 +27,7 @@
     align-items: center;
   }
   &__link {
-    padding: 0 1.5rem;
+    padding: 0 3rem;
     text-decoration: none;
     color: white;
     font-size: 1.6rem;
