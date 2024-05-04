@@ -1,6 +1,9 @@
 .heading-1 {
   font-size: 4rem;
   text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .heading-2 {
