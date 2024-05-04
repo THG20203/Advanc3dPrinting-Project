@@ -1,7 +1,10 @@
 .header {
   &__container {
-    background-color: rgb(228, 228, 228);
+    background-color: var(--light-grey);
     height: calc(100vh - 16rem);
     grid-column: content-start / content-end;
+  }
+  &__image {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%, 0 80%);
   }
 }
