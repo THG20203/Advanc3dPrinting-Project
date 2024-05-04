@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const MainNavbar = () => {
   return (
     <div className="main-navbar__container">
-      <div className="main-navbar__content">Test MainNavbar</div>
+      <div className="main-navbar__content"></div>
     </div>
   );
 };

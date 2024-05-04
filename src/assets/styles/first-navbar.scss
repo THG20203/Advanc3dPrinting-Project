@@ -8,9 +8,20 @@
         [col-start] minmax(min-content, 14rem) [col-end]
       )
       [center-end] minmax(6rem, 1fr) [content-end] 10vw [full-end];
-    background-color: grey;
   }
   &__content {
-    grid-column: col-start 5 / content-end;
+    grid-column: col-start 6 / col-end 8;
+    background-color: grey;
+    margin: 0 1rem 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link {
+    padding: 0 1.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
   }
 }
