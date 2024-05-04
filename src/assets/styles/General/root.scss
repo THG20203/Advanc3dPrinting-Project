@@ -8,3 +8,15 @@
     [center-end] minmax(6rem, 1fr) [content-end] 10vw [full-end];
   grid-template-rows: 7vh 9vh;
 }
+
+.footer__root {
+  display: grid;
+  grid-template-columns:
+    [full-start] 10vw [content-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [content-end] 10vw [full-end];
+  grid-template-rows: 20vh;
+  background-color: var(--salmon-pink);
+}
