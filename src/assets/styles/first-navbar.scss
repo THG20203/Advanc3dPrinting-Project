@@ -11,9 +11,9 @@
   }
   &__content {
     grid-column: col-start 6 / col-end 8;
-    background-color: grey;
+    background-color: var(--grey);
     margin: 0 1rem 1rem;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 70%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%, 0 80%);
     display: flex;
     justify-content: center;
     align-items: center;
