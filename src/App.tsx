@@ -8,7 +8,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ErrorPage from "./pages/Error";
 import RootLayout from "./pages/Root";
 import HomePage from "./pages/mainPages/Home";
-import LatestPage from "./pages/mainPages/Latest";
+import AboutPage from "./pages/mainPages/About";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "latest", element: <LatestPage /> },
+      { path: "about", element: <AboutPage /> },
     ],
   },
 ]);

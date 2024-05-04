@@ -1,6 +1,6 @@
 import React from "react";
 
-const LatestPage = () => {
+const AboutPage = () => {
   return (
     <div className="container">
       <p>test</p>
@@ -8,4 +8,4 @@ const LatestPage = () => {
   );
 };
 
-export default LatestPage;
+export default AboutPage;
