@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-import "../../../assets/styles/first-navbar.scss";
+import "../../../assets/styles/main-navbar.scss";
 import { NavLink } from "react-router-dom";
 
 const MainNavbar = () => {
-  return <div>Test MainNavbar</div>;
+  return (
+    <div className="main-navbar__container">
+      <div className="main-navbar__content">Test MainNavbar</div>
+    </div>
+  );
 };
 
 export default MainNavbar;
