@@ -5,11 +5,16 @@ changes to show the appropriate page. For example, if someone clicks
 on a link to go to the home page, <Outlet /> will show the home page. */
 
 import { Outlet, useNavigation } from "react-router-dom";
+import FirstNavbar from "../components/Navigation/FirstNavbar/FirstNavbar";
+import test from "../components/test";
 import "../assets/styles/root.scss";
 
 const RootLayout = () => {
   return (
     <>
+      <div>
+        <FirstNavbar />
+      </div>
       <main>
         <Outlet />
       </main>

@@ -3,7 +3,7 @@ import "../../assets/styles/latest.scss";
 
 const LatestPage = () => {
   return (
-    <div className="latest-container">
+    <div className="container">
       <p>test</p>
     </div>
   );
