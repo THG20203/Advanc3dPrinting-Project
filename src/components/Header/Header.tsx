@@ -12,7 +12,7 @@ const Header = () => {
       <div className="header__image--container header__image--big">
         <img className="header__image" src={mainHeader} />
         <div className="header__text-container">
-          <h1 className="heading-1 header__text">Design, Print, Evolve</h1>
+          <h1 className="heading-1 header__text">Design</h1>
         </div>
       </div>
       <div className="header__image--container  header__image--wide">
@@ -29,9 +29,15 @@ const Header = () => {
       </div>
       <div className="header__image--container header__image--top-right">
         <img className="header__image" src={whatCanImage} />
+        <div className="header__text-container">
+          <h1 className="heading-1 header__text">Print</h1>
+        </div>
       </div>
       <div className="header__image--container header__image--bottom-right">
         <img className="header__image" src={whyChooseImage} />
+        <div className="header__text-container">
+          <h1 className="heading-1 header__text">Evolve</h1>
+        </div>
       </div>
     </div>
   );
