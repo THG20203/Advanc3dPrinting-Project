@@ -11,7 +11,7 @@
     background-color: #fff;
   }
   &__content {
-    grid-column: col-start 6 / content-end;
+    grid-column: col-start 5 / content-end;
     background-color: var(--grey);
     margin-bottom: 1rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%, 0 75%);
