@@ -21,7 +21,10 @@ const Header = () => {
           <h2 className="heading-2 header__text mb-md">
             3D Printing Design and Manufacturing Specialists
           </h2>
-          <p className="header__text">test test</p>
+          <p className="hero-text header__text">
+            Hero sentence! Quick sentence that intrigues, suggests what we do
+            and wants the reader to go on, 2-3 lines
+          </p>
         </div>
       </div>
       <div className="header__image--container header__image--top-right">

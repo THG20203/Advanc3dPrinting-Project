@@ -1,5 +1,7 @@
 import React from "react";
-import "./assets/styles/typography.scss";
+/* General styles */
+import "./assets/styles/General/typography.scss";
+import "./assets/styles/General/utilities.scss";
 /* Router and react-router-dom */
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
