@@ -60,7 +60,9 @@
     }
   }
   &__ap-logo {
-    width: 8rem;
+    width: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease, width 0.3s ease;
   }
   &__text-container {
     position: absolute;
@@ -75,4 +77,9 @@
   &__text {
     text-align: center;
   }
+}
+
+.header__text-container:hover .header__ap-logo {
+  opacity: 1; /* Full visibility on hover */
+  width: 7rem;
 }
