@@ -18,12 +18,12 @@ const Header = () => {
       <div className="header__image--container  header__image--wide">
         <img className="header__image" src={secondaryHeaderImage} />
         <div className="header__text-container">
-          <h2 className="heading-2 header__text mb-lg">
+          <h2 className="heading-2 header__text mb-md">
             3D Printing Design and Manufacturing Specialists
           </h2>
           <p className="hero-text header__text">
             Hero sentence! Quick sentence that intrigues, suggests what we do
-            and wants the reader to go on, 2-3 lines
+            and wants the reader to go on
           </p>
         </div>
       </div>
