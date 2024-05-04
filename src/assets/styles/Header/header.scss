@@ -25,6 +25,10 @@
       align-items: center;
       /* Ensures no overflow from clip-path or image scaling */
       overflow: hidden;
+      transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+      &:hover {
+        transform: scale(1.02); /* Scale the image up by 5% on hover */
+      }
       &::after {
         background: linear-gradient(
           45deg,
