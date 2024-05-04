@@ -9,10 +9,19 @@ import whyChooseImage from "../../assets/images/why-choose-us.png";
 const Header = () => {
   return (
     <div className="header__container">
-      <img className="header__image" src={mainHeader} />
-      <img className="header__image" src={secondaryHeaderImage} />
-      <img className="header__image" src={whatCanImage} />
-      <img className="header__image" src={whyChooseImage} />
+      <div className="header__image--container header__image--big">
+        <img className="header__image" src={mainHeader} />
+        <h1 className="heading-1 header__text">Design, Print, Evolve</h1>
+      </div>
+      <div className="header__image--container  header__image--wide">
+        <img className="header__image" src={secondaryHeaderImage} />
+      </div>
+      <div className="header__image--container header__image--top-right">
+        <img className="header__image" src={whatCanImage} />
+      </div>
+      <div className="header__image--container header__image--bottom-right">
+        <img className="header__image" src={whyChooseImage} />
+      </div>
     </div>
   );
 };
