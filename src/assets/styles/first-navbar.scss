@@ -14,7 +14,7 @@
     grid-column: col-start 6 / content-end;
     background-color: var(--grey);
     margin: 0 1rem 1rem;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%, 0 80%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%, 0 75%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,5 +24,8 @@
     text-decoration: none;
     color: white;
     font-size: 1.6rem;
+    &:hover {
+      scale: 1.1;
+    }
   }
 }
