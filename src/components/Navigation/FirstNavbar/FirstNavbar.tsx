@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../assets/styles/first-navbar.scss";
+import "../../../assets/styles/Navigation/first-navbar.scss";
 
 const FirstNavbar = () => {
   return (
@@ -10,12 +10,12 @@ const FirstNavbar = () => {
           href="mailto:advanc3dprintingltd@gmail.com"
         >
           <strong>
-            <span>Email Us</span>
+            <span>Email</span>
           </strong>
         </a>
         <a className="first-navbar__link" href="tel:+447757905335">
           <strong>
-            <span>T: +44 (0)7757 905335</span>
+            <span>+44 (0)7757 905335</span>
           </strong>
         </a>
       </div>
