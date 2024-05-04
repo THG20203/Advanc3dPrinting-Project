@@ -10,13 +10,17 @@ const FirstNavbar = () => {
           href="mailto:advanc3dprintingltd@gmail.com"
         >
           <strong>
-            <span>Email</span>
+            <span>Email:</span>
           </strong>
+          <br />
+          <span> advanc3dprintingltd@gmail.com</span>
         </a>
         <a className="first-navbar__link" href="tel:+447757905335">
           <strong>
-            <span>+44 (0)7757 905335</span>
+            <span>Telephone: </span>
           </strong>
+          <br />
+          <span>+44 (0)7757 905335</span>
         </a>
       </div>
     </div>
