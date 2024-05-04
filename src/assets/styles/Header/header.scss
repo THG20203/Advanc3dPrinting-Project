@@ -59,9 +59,17 @@
       grid-row: 2 / 3;
     }
   }
+  &__text-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Above image and overlay */
+  }
   &__text {
-    position: absolute; /* Absolute position within the flex container */
-    z-index: 2; /* Makes sure the title is on top of the pseudo-element */
     text-align: center;
   }
 }

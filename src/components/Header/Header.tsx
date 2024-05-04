@@ -11,10 +11,18 @@ const Header = () => {
     <div className="header__container">
       <div className="header__image--container header__image--big">
         <img className="header__image" src={mainHeader} />
-        <h1 className="heading-1 header__text">Design, Print, Evolve</h1>
+        <div className="header__text-container">
+          <h1 className="heading-1 header__text">Design, Print, Evolve</h1>
+        </div>
       </div>
       <div className="header__image--container  header__image--wide">
         <img className="header__image" src={secondaryHeaderImage} />
+        <div className="header__text-container">
+          <h2 className="heading-2 header__text mb-md">
+            3D Printing Design and Manufacturing Specialists
+          </h2>
+          <p className="header__text">test test</p>
+        </div>
       </div>
       <div className="header__image--container header__image--top-right">
         <img className="header__image" src={whatCanImage} />
