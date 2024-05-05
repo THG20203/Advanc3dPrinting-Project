@@ -1,7 +1,7 @@
-.footer {
+.tristan-footer {
   &__container {
     grid-column: full-start / full-end;
-    background-color: var(--salmon-pink);
+    background-color: blue;
     display: grid;
     grid-template-columns:
       [full-start] 10vw [content-start] minmax(6rem, 1fr) [center-start] repeat(

@@ -8,6 +8,7 @@ import { Outlet } from "react-router-dom";
 import FirstNavbar from "../components/Navigation/FirstNavbar/FirstNavbar";
 import MainNavbar from "../components/Navigation/MainNavbar/MainNavbar";
 import Footer from "../components/Footer/Footer";
+import TristanFooter from "../components/Footer/TristanFooter";
 import "../assets/styles/General/root.scss";
 
 const RootLayout = () => {
@@ -22,6 +23,7 @@ const RootLayout = () => {
       </main>
       <div className="footer__root">
         <Footer />
+        <TristanFooter />
       </div>
     </>
   );
