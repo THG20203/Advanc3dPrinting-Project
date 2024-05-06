@@ -4,10 +4,17 @@
     align-items: center;
     overflow: hidden;
     grid-column: full-start / full-end;
-    height: 7vh;
+    height: 10vh;
     background-color: var(--light-grey);
   }
   &__content {
     font-size: 3rem;
+    white-space: nowrap;
+    &:after {
+      content: "Quality | Partnership | Process Driven | Bespoke | Fast Turnarounds";
+      background: red;
+    }
   }
 }
+
+@keyframes;
