@@ -12,7 +12,21 @@
   }
   &__content {
     grid-column: content-start / content-end;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 60vw;
+    margin: -10vh auto 0;
+    padding: 0 2rem;
   }
-  &__address {
+  &__box {
+    flex-basis: 40%;
+    background-color: var(--salmon-pink);
+    height: 30rem;
+    padding: 6rem;
+    z-index: 3;
+    &--title {
+      color: #fff;
+    }
   }
 }
