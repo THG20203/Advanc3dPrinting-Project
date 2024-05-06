@@ -4,17 +4,24 @@
     align-items: center;
     overflow: hidden;
     grid-column: full-start / full-end;
-    height: 10vh;
+    height: 8vh;
     background-color: var(--light-grey);
   }
   &__content {
     font-size: 3rem;
     white-space: nowrap;
+    animation: marquee 45s infinite linear;
     &:after {
-      content: "Quality | Partnership | Process Driven | Bespoke | Fast Turnarounds";
-      background: red;
+      content: " Quality Products | Working in Partnership | Process Driven | Bespoke Solutions | Fast Turnarounds";
     }
   }
 }
 
-@keyframes;
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
