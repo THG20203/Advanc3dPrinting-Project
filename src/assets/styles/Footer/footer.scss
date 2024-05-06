@@ -24,12 +24,21 @@
     height: 25rem;
     padding: 6rem;
     z-index: 3;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 3rem 100%, 0 90%);
     &--title {
-      color: #fff;
       font-size: 3rem;
     }
-    &--text {
-      color: #fff;
+    &--hr {
+      margin: 1rem;
+      height: 2px;
+      background-color: black;
+    }
+    &--sign-off {
+      display: flex;
+      align-items: center;
+    }
+    &--logo {
+      width: 5vw;
     }
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../assets/styles/Footer/footer.scss";
+import footerLogo from "../../assets/images/footer-logo.png";
 
 const Footer = () => {
   return (
@@ -7,9 +8,14 @@ const Footer = () => {
       <div className="footer__content">
         <form className="footer__box">
           <p className="footer__box--title mb-sm">Why Us?</p>
-          <p className="footer__box--text paragraph-text">
+          <p className="paragraph-text">
             Partner with us and let's bring your ideas to life.
           </p>
+          <hr className="footer__box--hr" />
+          <div className="footer__box--sign-off">
+            <img src={footerLogo} className="footer__box--logo" />
+            <p className="paragraph-text">© 2022-2024, Advanc3d Printing</p>
+          </div>
         </form>
 
         <div className="footer__about">
