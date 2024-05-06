@@ -5,8 +5,8 @@ const Marquee = () => {
   return (
     <div className="marquee__container">
       <div className="marquee__content">
-        Quality Products | Working in Partnership | Process Driven | Bespoke
-        Solutions | Fast Turnarounds |
+        Quality Products | Partnership | Process Driven | Bespoke Solutions |
+        Fast Turnarounds |
       </div>
     </div>
   );
