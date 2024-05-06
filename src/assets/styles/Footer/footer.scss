@@ -16,16 +16,19 @@
     flex-wrap: wrap;
     align-items: center;
     max-width: 60vw;
-    margin: -10vh auto 0;
-    padding: 0 2rem;
+    margin-top: -10vh;
   }
   &__box {
-    flex-basis: 40%;
+    flex-basis: 60%;
     background-color: var(--salmon-pink);
-    height: 30rem;
+    height: 25rem;
     padding: 6rem;
     z-index: 3;
     &--title {
+      color: #fff;
+      font-size: 3rem;
+    }
+    &--text {
       color: #fff;
     }
   }

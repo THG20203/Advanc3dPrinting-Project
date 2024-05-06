@@ -6,8 +6,8 @@ const Footer = () => {
     <div className="footer__container">
       <div className="footer__content">
         <form className="footer__box">
-          <h3 className="footer__box--title heading-3 mb-sm">Subscribe</h3>
-          <p className="footer__box--text">
+          <p className="footer__box--title mb-sm">Why Us?</p>
+          <p className="footer__box--text paragraph-text">
             Partner with us and let's bring your ideas to life.
           </p>
         </form>
