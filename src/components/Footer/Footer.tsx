@@ -1,28 +1,17 @@
 import React from "react";
 import "../../assets/styles/Footer/footer.scss";
-import footerLogo from "../../assets/images/footer-logo.png";
+import FooterBox from "../Footer/FooterBox";
 
 const Footer = () => {
   return (
     <div className="footer__container">
       <div className="footer__content">
-        <form className="footer__box">
-          <p className="footer__box--title mb-sm">Why Us?</p>
-          <p className="paragraph-text">
-            Partner with us and let's bring your ideas to life.
-          </p>
-          <hr className="footer__box--hr" />
-          <div className="footer__box--sign-off">
-            <img src={footerLogo} className="footer__box--logo" />
-            <p className="paragraph-text">© 2022-2024, Advanc3d Printing</p>
-          </div>
-        </form>
-
+        <FooterBox />
         <div className="footer__about">
-          <p className="footer__title">About</p>
+          <p className="footer__title mb-md">About</p>
           <p className="footer__text">
             We are a design and manufacturing engineer specializing in 3D
-            printing, we offer exceptional design for 3D printing services, from
+            printing. We offer exceptional design for 3D printing services, from
             initial idea to prototyping and manufacturing of one-off parts.
           </p>
         </div>

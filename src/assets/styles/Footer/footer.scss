@@ -15,30 +15,20 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 60vw;
     margin-top: -10vh;
   }
-  &__box {
+  &__list {
+    min-height: 20rem;
+  }
+  &__about {
     flex-basis: 60%;
-    background-color: var(--salmon-pink);
-    height: 25rem;
-    padding: 6rem;
-    z-index: 3;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 3rem 100%, 0 90%);
-    &--title {
-      font-size: 3rem;
-    }
-    &--hr {
-      margin: 1rem;
-      height: 2px;
-      background-color: black;
-    }
-    &--sign-off {
-      display: flex;
-      align-items: center;
-    }
-    &--logo {
-      width: 5vw;
-    }
+    padding: 5vh 10vw 0;
+    color: white;
+  }
+  &__title {
+    font-size: 2.5rem;
+  }
+  &__text {
+    font-size: 1.4rem;
   }
 }
