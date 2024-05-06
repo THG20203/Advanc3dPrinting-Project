@@ -4,7 +4,7 @@ import "../../assets/styles/Footer/footer-box.scss";
 
 const FooterBox = () => {
   return (
-    <div className="footer__box">
+    <div className="footer__box mb-lg">
       <p className="footer__box--title mb-md">Why Us?</p>
       <p className="footer__box--text mb-sm">
         We are well-equipped to handle the most intricate projects with

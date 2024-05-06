@@ -17,5 +17,5 @@
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [content-end] 10vw [full-end];
-  grid-template-rows: 50vh 15vh;
+  grid-template-rows: max-content 15vh;
 }

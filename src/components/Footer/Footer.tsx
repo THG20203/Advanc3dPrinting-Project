@@ -17,22 +17,29 @@ const Footer = () => {
         </div>
 
         <div className="footer__list">
-          <p className="footer__title">Operations</p>
+          <p className="footer__title mb-md">Design</p>
           <ul>
-            <li>Design Process</li>
-            <li>Manufacturing Process</li>
-            <li>Design Advice / Consultancy</li>
-            <li>Reverse Engineering</li>
-            <li>Prototype Design</li>
+            <li className="footer__text mb-sm">Design Process</li>
+            <li className="footer__text mb-sm">Manufacturing Process</li>
+            <li className="footer__text mb-sm">Design Advice / Consultancy</li>
+            <li className="footer__text mb-sm">Reverse Engineering</li>
+            <li className="footer__text mb-sm">Prototype Design</li>
           </ul>
         </div>
         <div className="footer__list">
-          <p className="footer__title">Quick Links</p>
+          <p className="footer__title mb-md">Manufacturing</p>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Ideas Gallery</li>
-            <li>Get in touch</li>
+            <li className="footer__text mb-sm">On Demand Manufacturing</li>
+            <li className="footer__text mb-sm">Protoype Manufacturing</li>
+          </ul>
+        </div>
+        <div className="footer__list">
+          <p className="footer__title mb-md">Quick Links</p>
+          <ul>
+            <li className="footer__text mb-sm">Home</li>
+            <li className="footer__text mb-sm">About</li>
+            <li className="footer__text mb-sm">Ideas Gallery</li>
+            <li className="footer__text mb-sm">Get in touch</li>
           </ul>
         </div>
       </div>

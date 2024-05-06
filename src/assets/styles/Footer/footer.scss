@@ -21,14 +21,20 @@
     min-height: 20rem;
   }
   &__about {
-    flex-basis: 60%;
-    padding: 5vh 10vw 0;
-    color: white;
+    flex-basis: 50%;
+    padding: 5vh 0 0 8vw;
   }
   &__title {
     font-size: 2.5rem;
+    color: white;
   }
   &__text {
     font-size: 1.4rem;
+    color: white;
+  }
+  &__list {
+    width: 33%;
+    color: white;
+    padding: 0 5rem;
   }
 }
