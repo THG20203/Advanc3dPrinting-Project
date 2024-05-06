@@ -1,0 +1,13 @@
+.marquee {
+  &__container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    grid-column: full-start / full-end;
+    height: 7vh;
+    background-color: var(--light-grey);
+  }
+  &__content {
+    font-size: 3rem;
+  }
+}
