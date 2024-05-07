@@ -14,5 +14,12 @@
     border-color: var(--grey) transparent transparent transparent;
   }
   &__content {
+    position: relative;
+    height: 20vh;
+  }
+  &--2 {
+    position: absolute;
+    left: 4vw;
+    top: 4vh;
   }
 }

@@ -1,14 +1,16 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "../../assets/styles/SpeechBubble/speech-bubble.scss";
 
 const SpeechBubble = () => {
   return (
-    <Fragment>
-      <div className="speech-bubble__content">
-        <div className="speech-bubble speech-bubble--1"></div>
-        <div className="speech-bubble speech-bubble--2"></div>
+    <div className="speech-bubble__content">
+      <div className="speech-bubble--1">
+        <div className="speech-bubble"></div>
       </div>
-    </Fragment>
+      <div className="speech-bubble--2">
+        <div className="speech-bubble"></div>
+      </div>
+    </div>
   );
 };
 
