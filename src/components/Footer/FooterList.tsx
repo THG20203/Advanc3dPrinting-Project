@@ -1,45 +1,30 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "../../assets/styles/Footer/footer-list.scss";
 
-const FooterList = () => {
+interface Link {
+  id: string;
+  name: string;
+}
+
+interface FooterListProps {
+  footerTitle: string;
+  links: Link[];
+}
+
+const FooterList: React.FC<FooterListProps> = ({ footerTitle, links }) => {
   return (
-    <>
+    <Fragment>
       <div className="footer__list">
-        <p className="footer__title mb-md">Quick Links</p>
+        <p className="footer__title mb-md">{footerTitle}</p>
         <ul>
-          <li className="footer__text mb-sm">Home</li>
-          <li className="footer__text mb-sm">About</li>
-          <li className="footer__text mb-sm">Ideas Gallery</li>
-          <li className="footer__text mb-sm">Get in touch</li>
+          {links.map((link) => (
+            <li key={link.id} className="footer__text mb-sm">
+              {link.name}
+            </li>
+          ))}
         </ul>
       </div>
-      <div className="footer__list">
-        <p className="footer__title mb-md">Design</p>
-        <ul>
-          <li className="footer__text mb-sm">Design Process</li>
-          <li className="footer__text mb-sm">Manufacturing Process</li>
-          <li className="footer__text mb-sm">Design Advice / Consultancy</li>
-          <li className="footer__text mb-sm">Reverse Engineering</li>
-          <li className="footer__text mb-sm">Prototype Design</li>
-        </ul>
-      </div>
-      <div className="footer__list">
-        <p className="footer__title mb-md">Manufacturing</p>
-        <ul>
-          <li className="footer__text mb-sm">On Demand Manufacturing</li>
-          <li className="footer__text mb-sm">Protoype Manufacturing</li>
-        </ul>
-      </div>
-      <div className="footer__list">
-        <p className="footer__title mb-md">Material Selection</p>
-        <ul>
-          <li className="footer__text mb-sm">Standard and Aesthetic</li>
-          <li className="footer__text mb-sm">Engineering</li>
-          <li className="footer__text mb-sm">Flexible</li>
-          <li className="footer__text mb-sm">Fiber Reinforced</li>
-        </ul>
-      </div>
-    </>
+    </Fragment>
   );
 };
 
