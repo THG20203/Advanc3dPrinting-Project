@@ -22,19 +22,14 @@
   }
   &__about {
     flex-basis: 50%;
-    padding: 5vh 0 0 8vw;
+    padding-left: 8vw;
   }
   &__title {
     font-size: 2.5rem;
     color: white;
   }
   &__text {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: white;
-  }
-  &__list {
-    width: 33%;
-    color: white;
-    padding: 0 5rem;
   }
 }
