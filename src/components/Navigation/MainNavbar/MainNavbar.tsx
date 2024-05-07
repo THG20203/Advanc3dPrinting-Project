@@ -66,7 +66,7 @@ const MainNavbar = () => {
             </li>
             <li className="main-navbar__list--item">
               <NavLink
-                to="/ThreeDPrinting"
+                to="/threeDPrinting"
                 className="main-navbar__link"
                 /* onClick={handleLinkClick} */
               >
@@ -75,7 +75,7 @@ const MainNavbar = () => {
             </li>
             <li className="main-navbar__list--item">
               <NavLink
-                to="#"
+                to="/contact"
                 className="main-navbar__link"
                 /* onClick={handleLinkClick} */
               >
