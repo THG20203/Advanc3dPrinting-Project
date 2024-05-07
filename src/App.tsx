@@ -11,6 +11,7 @@ import HomePage from "./pages/mainPages/Home";
 import DesignProcessPage from "./pages/mainPages/DesignProcess";
 import ManufacturingProcessPage from "./pages/mainPages/ManufacturingProcess";
 import AboutPage from "./pages/mainPages/About";
+import ThreeDPrintingPage from "./pages/mainPages/ThreeDPrinting";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       { path: "designProcess", element: <DesignProcessPage /> },
       { path: "manufacturingProcess", element: <ManufacturingProcessPage /> },
       { path: "about", element: <AboutPage /> },
+      { path: "ThreeDPrinting", element: <ThreeDPrintingPage /> },
     ],
   },
 ]);

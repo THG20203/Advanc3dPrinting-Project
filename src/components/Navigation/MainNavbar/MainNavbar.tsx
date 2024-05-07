@@ -66,7 +66,7 @@ const MainNavbar = () => {
             </li>
             <li className="main-navbar__list--item">
               <NavLink
-                to="#"
+                to="/ThreeDPrinting"
                 className="main-navbar__link"
                 /* onClick={handleLinkClick} */
               >

@@ -1,11 +1,11 @@
 import React from "react";
 
-const DesignProcessPage = () => {
+const GalleryPage = () => {
   return (
     <div className="container">
-      <p>test</p>
+      <p>Gallery</p>
     </div>
   );
 };
 
-export default DesignProcessPage;
+export default GalleryPage;
