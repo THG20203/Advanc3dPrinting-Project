@@ -3,7 +3,7 @@ import "../../assets/styles/Gallery/firstGallery.scss";
 
 const secondGallery = () => {
   return (
-    <div>
+    <div className="second-gallery__container">
       <div>second gallery</div>
     </div>
   );

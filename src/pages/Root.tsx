@@ -7,6 +7,7 @@ on a link to go to the home page, <Outlet /> will show the home page. */
 import { Outlet } from "react-router-dom";
 import FirstNavbar from "../components/Navigation/FirstNavbar/FirstNavbar";
 import MainNavbar from "../components/Navigation/MainNavbar/MainNavbar";
+import FooterSpacer from "../components/Footer/FooterSpacer";
 import Footer from "../components/Footer/Footer";
 import TristanFooter from "../components/Footer/TristanFooter";
 import "../assets/styles/General/root.scss";
@@ -22,6 +23,7 @@ const RootLayout = () => {
         <Outlet />
       </main>
       <div className="footer__root">
+        <FooterSpacer />
         <Footer />
         <TristanFooter />
       </div>
