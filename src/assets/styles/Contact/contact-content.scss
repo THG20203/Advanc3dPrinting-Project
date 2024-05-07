@@ -1,0 +1,21 @@
+.contact {
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__link {
+    color: black;
+    text-decoration: none;
+    /* trick to make links only as wide as text content */
+    display: inline-block;
+    max-width: max-content;
+  }
+}
+
+.contact-bold {
+  font-weight: 600;
+}
+
+.address-text {
+  text-align: left;
+}

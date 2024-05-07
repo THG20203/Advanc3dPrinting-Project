@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/styles/SpeechBubble/speech-bubble.scss";
+import "../../assets/styles/Contact/speech-bubble.scss";
 
 const SpeechBubble = () => {
   return (
