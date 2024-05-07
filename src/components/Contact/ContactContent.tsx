@@ -6,11 +6,10 @@ const ContactContent = () => {
     <div className="contact__content">
       <SpeechBubble />
       <h2 className="heading-2 mb-md">Get in Touch</h2>
-      <p className="paragraph-text">
-        Feel free to contact us and discuss your 3D printing needs.
-      </p>
       <p className="paragraph-text mb-lg">
-        We are here to assist you from concept to production.
+        Feel free to contact us and discuss your 3D printing needs. Free
+        consultations and quotes for both design and manufacturing. We are here
+        to assist you from concept to production.
       </p>
       <a className="contact__link" href="mailto:advanc3dprintingltd@gmail.com">
         <p className="paragraph-text mb-sm contact-bold">
