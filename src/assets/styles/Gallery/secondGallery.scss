@@ -1,6 +1,6 @@
 .second-gallery {
   &__container {
-    grid-column: full-start / full-end;
+    grid-column: content-start / content-end;
     height: 50vh;
   }
 }

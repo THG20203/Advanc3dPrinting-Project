@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/styles/Gallery/firstGallery.scss";
+import "../../assets/styles/Gallery/secondGallery.scss";
 
 const secondGallery = () => {
   return (
