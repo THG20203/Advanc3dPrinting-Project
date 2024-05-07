@@ -1,0 +1,6 @@
+.contact {
+  &__container {
+    grid-column: content-start / content-end;
+    height: calc(100vh - 17vh);
+  }
+}
