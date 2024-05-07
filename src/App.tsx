@@ -8,6 +8,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ErrorPage from "./pages/Error";
 import RootLayout from "./pages/Root";
 import HomePage from "./pages/mainPages/Home";
+import DesignProcessPage from "./pages/mainPages/DesignProcess";
+import ManufacturingProcessPage from "./pages/mainPages/ManufacturingProcess";
 import AboutPage from "./pages/mainPages/About";
 
 const router = createBrowserRouter([
@@ -17,6 +19,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
+      { path: "designProcess", element: <DesignProcessPage /> },
+      { path: "manufacturingProcess", element: <ManufacturingProcessPage /> },
       { path: "about", element: <AboutPage /> },
     ],
   },
