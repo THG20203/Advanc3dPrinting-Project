@@ -14,7 +14,8 @@ import HomePage from "./pages/mainPages/Home";
 import ProcessPage from "./pages/mainPages/Process";
 import AboutPage from "./pages/mainPages/About";
 import DesignSupportPage from "./pages/mainPages/DesignSupport";
-import MaterialSelectionPage from "./pages/mainPages/MaterialSelection"; // Corrected import
+import ManufacturingPage from "./pages/mainPages/Manufacturing";
+import MaterialSelectionPage from "./pages/mainPages/MaterialSelection";
 import ThreeDPrintingPage from "./pages/mainPages/ThreeDPrinting";
 import ContactPage from "./pages/mainPages/Contact";
 
@@ -65,7 +66,7 @@ const router = createBrowserRouter([
           { path: "reverse-engineering", element: <ReverseEngineeringPage /> },
         ],
       },
-      /* {
+      {
         path: "manufacturing",
         element: <ManufacturingPage />,
         children: [
@@ -85,7 +86,7 @@ const router = createBrowserRouter([
           { path: "flexible", element: <FlexiblePage /> },
           { path: "fiber-reinforced", element: <FiberReinforcedPage /> },
         ],
-      }, */
+      },
       { path: "threeDPrinting", element: <ThreeDPrintingPage /> },
       { path: "contact", element: <ContactPage /> },
     ],
