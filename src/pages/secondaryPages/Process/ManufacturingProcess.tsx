@@ -3,7 +3,7 @@ import React from "react";
 const ManufacturingProcessPage = () => {
   return (
     <div className="container">
-      <p>test</p>
+      <p>Manufacturing Process</p>
     </div>
   );
 };

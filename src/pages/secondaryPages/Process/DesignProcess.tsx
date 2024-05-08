@@ -3,7 +3,7 @@ import React from "react";
 const DesignProcessPage = () => {
   return (
     <div className="container">
-      <p>test</p>
+      <p>Design Process</p>
     </div>
   );
 };

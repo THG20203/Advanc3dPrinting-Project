@@ -11,17 +11,26 @@ import RootLayout from "./pages/Root";
 
 /* Main Pages */
 import HomePage from "./pages/mainPages/Home";
+import ProcessPage from "./pages/mainPages/Process";
 import AboutPage from "./pages/mainPages/About";
+import DesignSupportPage from "./pages/mainPages/DesignSupport";
+import ManufacturingPage from "./pages/mainPages/DesignSupport";
+import MaterialSelectionPage from "./pages/mainPages/DesignSupport";
 import ThreeDPrintingPage from "./pages/mainPages/ThreeDPrinting";
 import ContactPage from "./pages/mainPages/Contact";
 
 /* Secondary Pages */
 // Secondary Manufacturing
-import DesignProcessPage from "./pages/secondaryPages/DesignProcess";
-import ManufacturingProcessPage from "./pages/secondaryPages/ManufacturingProcess";
+import DesignProcessPage from "./pages/secondaryPages/Process/DesignProcess";
+import ManufacturingProcessPage from "./pages/secondaryPages/Process/ManufacturingProcess";
 // Secondary Design Support
-import GalleryPage from "./pages/secondaryPages/Gallery";
+import DesignAdvicePage from "./pages/secondaryPages/DesignSupport/DesignAdvice";
+import GalleryPage from "./pages/secondaryPages/DesignSupport/Gallery";
+import PrototypeDesignPage from "./pages/secondaryPages/DesignSupport/PrototypeDesign";
+import ReverseEngineeringPage from "./pages/secondaryPages/DesignSupport/ReverseEngineering";
 // Secondary Manufacturing
+import OnDemandPage from "./pages/secondaryPages/DesignSupport/OnDemand";
+import PrototypeManufacturingPage from "./pages/secondaryPages/DesignSupport/PrototypeManufacturing";
 
 const router = createBrowserRouter([
   {
@@ -32,8 +41,11 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path: "designProcess", element: <DesignProcessPage /> },
       { path: "manufacturingProcess", element: <ManufacturingProcessPage /> },
+      { path: "process", element: <ProcessPage /> },
       { path: "about", element: <AboutPage /> },
-      { path: "gallery", element: <GalleryPage /> },
+      { path: "design-support", element: <DesignSupportPage /> },
+      { path: "manufacturing", element: <ManufacturingPage /> },
+      { path: "material-selection", element: <MaterialSelectionPage /> },
       { path: "threeDPrinting", element: <ThreeDPrintingPage /> },
       { path: "contact", element: <ContactPage /> },
     ],
