@@ -1,6 +1,6 @@
 import React from "react";
 
-const OnDemandPage = () => {
+const StandardAestethicPage = () => {
   return (
     <div className="container">
       <p>Standard Aesthetic</p>
@@ -8,4 +8,4 @@ const OnDemandPage = () => {
   );
 };
 
-export default OnDemandPage;
+export default StandardAestethicPage;

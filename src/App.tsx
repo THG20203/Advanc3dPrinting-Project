@@ -29,8 +29,10 @@ import GalleryPage from "./pages/secondaryPages/DesignSupport/Gallery";
 import PrototypeDesignPage from "./pages/secondaryPages/DesignSupport/PrototypeDesign";
 import ReverseEngineeringPage from "./pages/secondaryPages/DesignSupport/ReverseEngineering";
 // Secondary Manufacturing
-import OnDemandPage from "./pages/secondaryPages/DesignSupport/OnDemand";
-import PrototypeManufacturingPage from "./pages/secondaryPages/DesignSupport/PrototypeManufacturing";
+import OnDemandPage from "./pages/secondaryPages/Manufacturing/OnDemand";
+import PrototypeManufacturingPage from "./pages/secondaryPages/Manufacturing/PrototypeManufacturing";
+// Material Selection
+import StandardAestheticPage from "./pages/secondary/MaterialSelection/StandardAesthetic";
 
 const router = createBrowserRouter([
   {
