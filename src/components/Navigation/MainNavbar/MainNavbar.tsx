@@ -3,7 +3,10 @@ import "../../../assets/styles/Navigation/main-navbar.scss";
 import { NavLink } from "react-router-dom";
 import mainLogo from "../../../assets/images/main-logo.png";
 
-// Define type for the hoverItem state
+/* MenuItem: A TypeScript type definition, declaring that MenuItem 
+can be one of several string values corresponding to different 
+sections of the navbar or an empty string, used for managing which 
+menu item is currently being hovered over. */
 type MenuItem =
   | "process"
   | "design-support"
@@ -12,12 +15,35 @@ type MenuItem =
   | "";
 
 const MainNavbar = () => {
+  /* State (hoverItem): Uses the useState hook to maintain the 
+  state of the currently hovered item in the navbar. Initially, 
+  it is an empty string. */
+  /* useState hook is initialized with an empty string. 
+  This state, hoverItem, is used to track which menu item 
+  the user is currently hovering over. This state changes 
+  as the user interacts with different menu items, which helps 
+  in controlling the visibility of dropdown menus. */
   const [hoverItem, setHoverItem] = useState<MenuItem>("");
 
+  /* handleMouseEnter: This function is called when the mouse 
+  pointer enters a navigation menu item. It takes a MenuItem 
+  type as a parameter (which is one of the predefined string 
+    values) and sets the hoverItem state to this value. */
+  /* const handleMouseEnter = (item: MenuItem) => 
+  setHoverItem(item); updates the hoverItem to reflect the item 
+  currently under the mouse, enabling the dropdown menu
+  associated with that item. */
   const handleMouseEnter = (item: MenuItem) => {
     setHoverItem(item);
   };
 
+  /* handleMouseLeave: This function is triggered 
+  when the mouse leaves a menu item. It resets the 
+  hoverItem state to an empty string, which effectively 
+  hides any open dropdown menu.
+  const handleMouseLeave = () => setHoverItem(""); ensures
+  that the dropdown disappears when the mouse is no longer 
+  over any item that should show a dropdown. */
   const handleMouseLeave = () => {
     setHoverItem("");
   };
@@ -204,3 +230,9 @@ const MainNavbar = () => {
 };
 
 export default MainNavbar;
+
+/* Conditional rendering based on hoverItem is used within 
+each li to decide whether to display a dropdown menu. For 
+instance, {hoverItem === "process" && (...)} checks if 
+hoverItem is equal to "process"; if true, it renders 
+the dropdown menu associated with the "Process" item. */

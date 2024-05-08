@@ -10,6 +10,9 @@ const NoChildMaterialSelectionContent = () => (
 );
 
 const MaterialSelectionPage = () => {
+  /* useOutlet hook from react-router-dom to check if there are 
+  any active child routes. hasChild will contain the child component 
+  if there are any active child routes, otherwise, it will be null. */
   const hasChild = useOutlet();
 
   return (
@@ -23,3 +26,7 @@ const MaterialSelectionPage = () => {
 };
 
 export default MaterialSelectionPage;
+
+/* !hasChild && <NoChildMaterialSelectionContent />: 
+This line conditionally renders the NoChildMaterialSelectionContent 
+component if there are no active child routes (hasChild is null). */
