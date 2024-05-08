@@ -112,3 +112,26 @@ array */
 the footerLinks array, passing the footerTitle and links to each FooterList. 
 This way, each group of links specified in the footerLinks array will be 
 displayed under its respective title. */
+
+/* {footerLinks.map((footerLink) => (
+  <FooterList
+    key={footerLink.footerTitle.replace(/\s+/g, "_").toLowerCase()}
+    footerTitle={footerLink.footerTitle}
+    links={footerLink.links}
+  />
+))} */
+
+/* This code dynamically generates multiple FooterList components based on the 
+data provided in the footerLinks array. Each FooterList is responsible 
+for rendering a block or section of the footer, displaying a title and a 
+list of links under that title.
+By using map() in this way, the code efficiently creates complex HTML structures 
+from simple data models, integrating seamlessly into React's declarative UI paradigm. 
+Each FooterList receives its necessary data as props and takes care of rendering 
+that data as a part of the larger footer.*/
+
+/* In summary, the map() function in the Footer.tsx is traditionally mapping through 
+the footerLinks object, transforming each item in the array not into another data 
+structure, but into a JSX component (FooterList) that is capable of rendering the
+ data as part of the React component tree. This is a common pattern in React for 
+ rendering lists of components based on data arrays. */
