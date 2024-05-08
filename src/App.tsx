@@ -1,26 +1,25 @@
 import React from "react";
-/* General styles */
+// General styles
 import "./assets/styles/General/typography.scss";
 import "./assets/styles/General/utilities.scss";
-/* Router and react-router-dom */
+// Router and react-router-dom
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-/* General Routes / Pages */
+// General Routes / Pages
 import ErrorPage from "./pages/Error";
 import RootLayout from "./pages/Root";
 
-/* Main Pages */
+// Main Pages
 import HomePage from "./pages/mainPages/Home";
 import ProcessPage from "./pages/mainPages/Process";
 import AboutPage from "./pages/mainPages/About";
 import DesignSupportPage from "./pages/mainPages/DesignSupport";
-import ManufacturingPage from "./pages/mainPages/DesignSupport";
-import MaterialSelectionPage from "./pages/mainPages/DesignSupport";
+import MaterialSelectionPage from "./pages/mainPages/MaterialSelection"; // Corrected import
 import ThreeDPrintingPage from "./pages/mainPages/ThreeDPrinting";
 import ContactPage from "./pages/mainPages/Contact";
 
-/* Secondary Pages */
-// Secondary Manufacturing
+// Secondary Pages
+// Secondary Process
 import DesignProcessPage from "./pages/secondaryPages/Process/DesignProcess";
 import ManufacturingProcessPage from "./pages/secondaryPages/Process/ManufacturingProcess";
 // Secondary Design Support
@@ -66,7 +65,7 @@ const router = createBrowserRouter([
           { path: "reverse-engineering", element: <ReverseEngineeringPage /> },
         ],
       },
-      {
+      /* {
         path: "manufacturing",
         element: <ManufacturingPage />,
         children: [
@@ -86,7 +85,7 @@ const router = createBrowserRouter([
           { path: "flexible", element: <FlexiblePage /> },
           { path: "fiber-reinforced", element: <FiberReinforcedPage /> },
         ],
-      },
+      }, */
       { path: "threeDPrinting", element: <ThreeDPrintingPage /> },
       { path: "contact", element: <ContactPage /> },
     ],
