@@ -32,7 +32,10 @@ import ReverseEngineeringPage from "./pages/secondaryPages/DesignSupport/Reverse
 import OnDemandPage from "./pages/secondaryPages/Manufacturing/OnDemand";
 import PrototypeManufacturingPage from "./pages/secondaryPages/Manufacturing/PrototypeManufacturing";
 // Material Selection
-import StandardAestheticPage from "./pages/secondary/MaterialSelection/StandardAesthetic";
+import StandardAestheticPage from "./pages/secondaryPages/MaterialSelection/StandardAesthetic";
+import EngineeringPage from "./pages/secondaryPages/MaterialSelection/Engineering";
+import FlexiblePage from "./pages/secondaryPages/MaterialSelection/Flexible";
+import FiberReinforcedPage from "./pages/secondaryPages/MaterialSelection/FiberReinforced";
 
 const router = createBrowserRouter([
   {
