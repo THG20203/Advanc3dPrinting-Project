@@ -3,13 +3,17 @@ import "../../assets/styles/Footer/footer.scss";
 import FooterBox from "../Footer/FooterBox";
 import FooterList from "../Footer/FooterList";
 
-// Define the structure of the links using TypeScript interface, if not already defined
+/* Define the structure of the links using TypeScript interface - so 
+interface Link defines a type individual links with 'id' and name. */
 interface Link {
   // Adding an 'id' for key usage
   id: string;
   name: string;
 }
 
+/*  Defines a type for groups of links including a 
+title for the group (footerTitle) and an array of 
+Link objects (links). */
 interface FooterLinkGroup {
   footerTitle: string;
   links: Link[];
@@ -84,3 +88,27 @@ const Footer = () => {
 };
 
 export default Footer;
+
+/* {footerLinks.map((footerLink) => ( — This line begins a map operation 
+  on the footerLinks array, creating a list component for each group. */
+
+/* .map() is a JavaScript array method that creates a new array with the 
+results of calling a function for every array element. In React, it's 
+commonly used for rendering lists of components based on data arrays. */
+
+/* Render a FooterList for each group of links.
+
+key={footerLink.footerTitle.replace(/\s+/g, "_").toLowerCase()} — React uses 
+key to manage which items in the list are added, changed, or removed (used 
+here to create a unique key from the footer title by replacing spaces with
+underscores and converting to lower case).
+
+footerTitle={footerLink.footerTitle} — Passes the title of the link group.
+
+links={footerLink.links} — Passes the array of links for each group. Remember its an
+array */
+
+/* In Footer.tsx, each FooterList component instance is created by mapping over 
+the footerLinks array, passing the footerTitle and links to each FooterList. 
+This way, each group of links specified in the footerLinks array will be 
+displayed under its respective title. */
