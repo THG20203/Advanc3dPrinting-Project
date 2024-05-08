@@ -44,11 +44,49 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "process", element: <ProcessPage /> },
+      {
+        path: "process",
+        element: <ProcessPage />,
+        children: [
+          { path: "design-process", element: <DesignProcessPage /> },
+          {
+            path: "manufacturing-process",
+            element: <ManufacturingProcessPage />,
+          },
+        ],
+      },
       { path: "about", element: <AboutPage /> },
-      { path: "design-support", element: <DesignSupportPage /> },
-      { path: "manufacturing", element: <ManufacturingPage /> },
-      { path: "material-selection", element: <MaterialSelectionPage /> },
+      {
+        path: "design-support",
+        element: <DesignSupportPage />,
+        children: [
+          { path: "design-advice", element: <DesignAdvicePage /> },
+          { path: "gallery", element: <GalleryPage /> },
+          { path: "prototype-design", element: <PrototypeDesignPage /> },
+          { path: "reverse-engineering", element: <ReverseEngineeringPage /> },
+        ],
+      },
+      {
+        path: "manufacturing",
+        element: <ManufacturingPage />,
+        children: [
+          { path: "ondemand", element: <OnDemandPage /> },
+          {
+            path: "prototype-manufacturing",
+            element: <PrototypeManufacturingPage />,
+          },
+        ],
+      },
+      {
+        path: "material-selection",
+        element: <MaterialSelectionPage />,
+        children: [
+          { path: "standard-aesthetic", element: <StandardAestheticPage /> },
+          { path: "engineering", element: <EngineeringPage /> },
+          { path: "flexible", element: <FlexiblePage /> },
+          { path: "fiber-reinforced", element: <FiberReinforcedPage /> },
+        ],
+      },
       { path: "threeDPrinting", element: <ThreeDPrintingPage /> },
       { path: "contact", element: <ContactPage /> },
     ],
